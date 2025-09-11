@@ -11,8 +11,6 @@ const shiftStore = new ShiftStore();
 
 const App = () => {
 
-    console.log("start")
-
     return (
         <GestureHandlerRootView style={{ flex: 1 }}>
             <SafeAreaProvider>

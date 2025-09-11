@@ -24,7 +24,6 @@ const ShiftDetailScreen = observer(() => {
 
     const ratingStars = '⭐'.repeat(Math.round(shift.customerRating)) + '☆'.repeat(5 - Math.round(shift.customerRating));
 
-    console.log('dddd', shift.workTypes)
 
     return (
         <ScrollView style={styles.container} contentContainerStyle={styles.content}>

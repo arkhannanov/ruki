@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 const API_BASE_URL = 'https://mobile.handswork.pro/api/shifts/map-list-unauthorized';
-const TEST_URL = 'https://mobile.handswork.pro/api/shifts/map-list-unauthorized?latitude=45.039268&longitude=38.987221'
 
 export const getShiftsByLocation = async (lat, lng) => {
     try {
