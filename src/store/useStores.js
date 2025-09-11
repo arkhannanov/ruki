@@ -1,6 +1,6 @@
-import { useContext } from 'react';
-import { observer } from 'mobx-react';
-import { Context } from 'react';
+import React, { createContext, useContext } from 'react';
+
+export const StoresContext = createContext(undefined);
 
 export const useStores = () => {
     const store = useContext(StoresContext);
@@ -10,9 +10,7 @@ export const useStores = () => {
     return store;
 };
 
-const StoresContext = React.createContext();
-
-export const Provider = ({ children, ...stores }) => {
+export const StoresProvider = ({ children, ...stores }) => {
     return (
         <StoresContext.Provider value={stores}>
             {children}

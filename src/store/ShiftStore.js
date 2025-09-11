@@ -36,7 +36,9 @@ class ShiftStore {
             const shifts = await getShiftsByLocation(coords.latitude, coords.longitude);
             this.setShifts(shifts);
         } catch (err) {
-            this.setError(err.message || 'Ошибка загрузки');
+            // Показываем пользователю понятное сообщение
+            this.setError('Не удалось получить местоположение. Проверьте настройки разрешений.');
+            console.error('Location error:', err);
         } finally {
             this.setLoading(false);
         }

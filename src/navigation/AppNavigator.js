@@ -1,7 +1,7 @@
 import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
 import ShiftListScreen from '../screens/ShiftListScreen';
 import ShiftDetailScreen from '../screens/ShiftDetailScreen';
+import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
 
